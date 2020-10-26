@@ -3,7 +3,7 @@ window.onload = function() {
 	headerElement = document.getElementById('header')
 }
 
-const threshold = 20
+const threshold = 10
 
 window.addEventListener('scroll', event => {
 	if (window.scrollY >= threshold) {
