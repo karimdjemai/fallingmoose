@@ -1,15 +1,15 @@
 
 window.onload = function() {
-	headerElement = document.getElementById('header')
+	window.headerElement = document.getElementById('header')
 }
 
-const threshold = 10
+const threshold = 2
 
 window.addEventListener('scroll', event => {
-	if (window.scrollY >= threshold) {
-		headerElement.classList.remove("big");
+	if (window.scrollY > threshold) {
+		window.headerElement.classList.remove("big");
 	} else {
-		headerElement.classList.add("big");
+		window.headerElement.classList.add("big");
 	}
 })
 
